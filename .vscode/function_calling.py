@@ -32,7 +32,7 @@ functions = [
 ]
 
 messages = [{"role": "user", "content": "What's the weather like in Tokyo?"}]
-openai.api_key = "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"
+openai.api_key = "貴方のAPI-KEY"
 
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo", messages=messages, functions=functions
