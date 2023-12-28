@@ -3,7 +3,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+# ストリーミング
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 
 chat = ChatOpenAI(
     model_name="gpt-3.5-turbo",
