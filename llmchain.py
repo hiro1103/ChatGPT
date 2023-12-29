@@ -28,7 +28,7 @@ prompt = PromptTemplate(
     partial_variables={"format_instructions": output_parser.get_format_instructions()},
 )
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 
 chain = LLMChain(prompt=prompt, llm=chat, output_parser=output_parser)
