@@ -28,7 +28,7 @@ text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 docs = text_splitter.split_documents(raw_docs)
 print(len(docs))
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 embeddings = OpenAIEmbeddings()
 
 query = "AWSのS3からデータを読み込むためのDocumentLoaderはありますか？"
